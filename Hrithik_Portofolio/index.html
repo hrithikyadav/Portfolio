@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hrithik Yadav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('kG4CIkv9SJiHZCfky');
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Projects</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+
+        <h1>Hrithik Yadav</h1>
+        <h2><div id ="text"></div></h2>
+        <!-- <h2>CSE Undergraduate student at IIT Patna</h2> -->
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">Contact</a>
+        </div>
+        <table>
+            <tr>
+                <td onclick="linkedin()" class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i
+                            class="fab fa-linkedin"></i></a></td>
+                <td><h2 class="my-work">
+                    <a href="https://drive.google.com/drive/folders/11lilbqTGl9Fxi7piFDLp6o-4cr9ISDwP" target="_blank">My Works</a>
+                </h2></td>
+                <td onclick="github()" class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i
+                            class="fab fa-github"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Project</h1>
+        <section>
+            <h2>1. Where in the World</h2>
+            <p> • A full responsive website for searching any countries in the world and get information like Native Name, Population, Capital, Currencies, Languages and Region along with Flag of that country.</p>
+            <p> • Availability of switching between Dark and Light mode for the ease of user.</p>
+            <p> • Tech stack used here are HTML and CSS for UI/UX, JavaScript responsible for rendering UI/UX, data request/response from APIs.</p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+        </section>
+        <section>
+            <h2>2. Rock-Paper-Scissor</h2>
+            <p> • A full responsive website for playing the Rock-Paper-Scissor game.</p>
+            <p> • Rules are also provided about how to play the game and Users can view their scores.</p>
+            <p> • Tech stack used here are HTML and CSS for UI/UX and JavaScript responsible for rendering UI/UX.</p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <p>
+        <img src="" alt="Avatar" style="float:right;width:120px;height:120px;border-radius: 50%;">
+        <h1>ABOUT</h1>
+        </p>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am currently enrolled as a student of Nalanda College of Engineering, Chandi (Batch- 2021) in the
+                department of Electrical and Electronics Engineering (EEE), pursuing my undergraduate degree. I am
+                interested in the Web Development & Software development field and am seeking exciting opportunities
+                related to the same.
+            </p>
+            <p>
+                Being a student, I have repeatedly been exposed to new cultures and diverse groups of people. This has
+                made me able to quickly adapt to changes and gain a broader perspective. I am always curious about
+                things and enjoy learning. I like to solve problems and fix errors. I am a detail orientated person and
+                I keep my goals and tasks organized to maintain productivity.
+            </p>
+        </section>
+        <section>
+            <h2><i class = "fas fa-university"></i> Education</h2>
+            <p>• Nalanda College of Engineering, Chandi </p>
+            <ul>
+                <li>BTech in Electrical and Electronics Engineering</li>
+                <li>July 2021 - May 2025(Expected)</li>
+            </ul>
+            <p>• Gandhi Smarak High School cum Inter College, Bhore, Bihar </p>
+            <ul>
+                <li>Class XII Bihar School Examination Board (BSEB)</li>
+                <li>May 2017 - Mar 2019, Percentage: 77.4% (School Topper)</li>
+            </ul>
+            <p>• Gandhi Smarak High School cum Inter College, Bhore, Bihar</p>
+            <ul>
+                <li>Class X Bihar School Examination Board (BSEB)</li>
+                <li>May 2016 - Mar 2017, Percentage: 80%</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>
+            <p>• Programming/Development Languages : C++, HTML, CSS, JavaScript</p>
+            <p>• Courses : Computer Networking, Data Structures, Digital Electronics, Analog Electronics</p>
+            <p>• Technologies/Tools : Github, Canva, Figma, Adobe Photoshop, Adobe Lightroom</p>
+            </p>
+        </section>
+        <section>
+            <h2>Accomplishments/Achievements</h2>
+            <p>
+                <p>•  1st rank in Hackathon in an Intercollege Techfest in a team event.</p>
+                <p>•  Started the process of creation of clubs in college with the help of Professor, batchmates and seniors and ended up creating 11 clubs in my college.</p>
+                <p>•  Lead Coordinator of Cinematic Circle (Filmmaking Club of NCE Chandi).</p>
+                <p>•  Co-Lead Coordinator of illustriX (Design Club of NCE Chandi).</p>
+                <p>•  Vice Captain of College Badminton team.</p>
+                <p>•  Teaching Volunteer at Chirag (NGO of NCE Chandi).</p>
+            </p>
+        </section>
+        <p>
+            Head on to my resume for more details
+            <a href="https://drive.google.com/file/d/11j48v0soxAudqXIVN7FaccRtCZiDtrVs/view?usp=drivesdk" target="_blank">Hrithik Yadav Resume</a>
+        </p>
+
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>Contact</h1>
+        <section>
+            <h2>Contact Me</h2>
+            <p>
+            <p>You can write your message here itself or you can contact me by other ways</p>
+            <form>
+                <input id="entered_name" type="text" placeholder="Enter your name" required>
+                <input id="entered_email" type="email" placeholder="Enter your email" required><br>
+                <textarea id="entered_msg" placeholder="your message" required ></textarea><br>
+                <button onclick="sendMail()" class="btn_one">Send</button>
+            </form>
+            </p>
+        </section>
+        
+        <h2><i class = "fa fa-phone"></i>  +91 8083345079</h2>
+        <h2><i class = "fa fa-envelope"></i>  hrithikyadav251@gmail.com</h2>
+    </div>
+    
+    <div id="footer">
+        <section class="rw-wrapper">
+            Designed by
+            <div class="rw-words rw-words-1">
+              <span>Hrithik</span>
+              <span>Developer</span>
+              <span>Hrithik</span>
+              <span>Developer</span>
+              <span>Hrithik</span>
+              <span>Developer</span>
+            </div>
+      
+      </section>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="app.js"></script>
+    <script>
+        var string = "EEE Undergraduate student at NCE Chandi";
+        var array = string.split("");
+        var timer;
+        function frameLooper(){
+            if (array.length > 0) {
+                document.getElementById("text").innerHTML += array.shift();
+            }
+            else{
+                clearTimeout(timer);
+            }
+            loopTimer = setTimeout('frameLooper()',200);
+        }
+        frameLooper();
+        function linkedin() {
+            window.open("https://www.linkedin.com/in/hrithik-yadav-788530202/");
+        }
+        function github() {
+            window.open("https://github.com/hrithikyadav");
+        }
+        function syncdelay(milliseconds){
+            var start = new Date().getTime();
+            var end = 0;
+            while((end-start)< milliseconds){
+                end = new Date().getTime();
+            }
+            alert("Thank you for contacting me");
+        }
+        function sendMail() {
+            var tempParmas = {
+                from_name : document.getElementById("entered_name").value,
+                from_email : document.getElementById("entered_email").value,
+                message : document.getElementById("entered_msg").value,
+            }
+            emailjs.send("service_6ibuja9", "template_p20mgne", tempParmas)
+            syncdelay(3000)
+                .then(function (res) {
+                    console.log("Sucess", res.status);
+                });
+        }
+    </script>
+</body>
+
+</html>
